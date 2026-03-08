@@ -1,0 +1,114 @@
+﻿<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+        <li class="nav-item nav-profile">
+            <a href="#" class="nav-link">
+                <div class="nav-profile-image">
+                    <span class="login-status online"></span>
+                    <!--change to offline or busy as needed-->
+                </div>
+                <div class="nav-profile-text d-flex flex-column">
+                    <span class="font-weight-bold mb-2">Ahmet Semiz</span>
+                    <span class="text-secondary text-small">Admin</span>
+                </div>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("Dashboard", "Dashboard")">
+                <span class="menu-title">Dashboard</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("FeatureList", "Feature")">
+                <span class="menu-title">Ana Bilgiler</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("AboutList","About")">
+                <span class="menu-title">Hakkımda</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("ContactList","Contact")">
+                <span class="menu-title">İletişim</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("ChefList","Chef")" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Şefler</span>
+            </a>
+            
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("ProductList", "Product")" aria-expanded="false" aria-controls="icons">
+                <span class="menu-title">Ürünler</span>
+            </a>
+            <div class="collapse" id="icons">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/icons/font-awesome.html">Font Awesome</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("CategoryList", "Category")" aria-expanded="false" aria-controls="forms">
+                <span class="menu-title">Kategoriler</span>
+            </a>
+            <div class="collapse" id="forms">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/forms/basic_elements.html">Form Elements</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("ServiceList", "Service")" aria-expanded="false" aria-controls="charts">
+                <span class="menu-title">Servisler</span>
+            </a>
+            <div class="collapse" id="charts">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("TestimonialList", "Testimonial")" aria-expanded="false" aria-controls="auth">
+                <span class="menu-title">Mesajlar</span>
+            </a>
+
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("AdressInfoList", "AdressInfo")">
+                <span class="menu-title">Adres Bilgileri</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("GalleryList", "Gallery")" aria-expanded="false" aria-controls="tables">
+                <span class="menu-title">Galeri</span>
+            </a>
+            <div class="collapse" id="tables">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        
+            
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="@Url.Action("SubscribeList", "Subscribe")">
+                <span class="menu-title">Abonelikler</span>
+            </a>
+        </li>
+    </ul>
+</nav>

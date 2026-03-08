@@ -1,0 +1,82 @@
+﻿@model List<Baker.WebUI.Dtos.Category.ResultCategoryDto>
+
+
+<div class="container-xxl bg-light my-6 py-6 pt-0">
+    <div class="container">
+        
+
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+            <p class="text-primary text-uppercase mb-2">// Fırın Ürünleri</p>
+            <h1 class="display-6 mb-4">Fırın Ürünlerimizin Kategorilerini Keşfedin</h1>
+        </div>
+
+        <!-- Kategori Butonları -->
+        <div class="d-flex flex-wrap gap-2 justify-content-center mb-5">
+            @foreach (var category in Model)
+            {
+                <button class="btn btn-primary rounded-pill px-4"
+                        onclick="loadProducts(@category.CategoryId, this)">
+                    @category.CategoryName
+                </button>
+            }
+        </div>
+
+        <!-- Ürün Listesi -->
+        <div id="product-area" class="row g-4">
+            <div class="col-12 text-center text-muted">
+                <p>Ürünleri görmek için bir kategori seçin.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script en sona ve window'a bağlı tanımla -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const firstBtn = document.querySelector('.d-flex.flex-wrap.gap-2 button');
+    if (firstBtn) firstBtn.click();
+});
+    window.loadProducts = async function(categoryId, btn) {
+        document.querySelectorAll('.btn-category-active').forEach(b => {
+            b.classList.remove('btn-category-active');
+            b.style.opacity = '1';
+        });
+        btn.classList.add('btn-category-active');
+        btn.style.opacity = '0.7';
+
+        const productArea = document.getElementById('product-area');
+        productArea.innerHTML = '<div class="col-12 text-center"><div class="spinner-border text-primary"></div></div>';
+
+        try {
+            const response = await fetch(`https://localhost:7029/api/Product/by-category/${categoryId}`);
+            const products = await response.json();
+
+            if (products.length === 0) {
+                productArea.innerHTML = '<div class="col-12 text-center text-muted"><p>Bu kategoride ürün bulunamadı.</p></div>';
+                return;
+            }
+
+            productArea.innerHTML = products.map(p => `
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                                <div class="d-inline-block border border-primary rounded-pill px-3 mb-3">
+        ${p.price.toFixed(2)} ₺
+    </div>
+                            <h3 class="mb-3">${p.name}</h3>
+                            <span>${p.description ?? ''}</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="${p.imageUrl ?? 'img/product-1.jpg'}" alt="${p.name}"
+                                 style="width:100%; height:200px; object-fit:cover;">
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+        } catch (error) {
+            console.error('Hata:', error);
+            productArea.innerHTML = `<div class="col-12 text-center text-danger"><p>Hata: ${error.message}</p></div>`;
+        }
+    }
+</script>

@@ -1,0 +1,265 @@
+﻿@{
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="dashboard-wrapper">
+    <div class="tech-header mb-5">
+        <div class="title-section">
+            <h2 class="tech-title">Baker<span class="accent">System</span></h2>
+            <p class="tech-subtitle">DASHBOARD</p>
+        </div>
+        <div class="status-pill">
+            <span class="pulse-dot"></span> Sistem Senkronize
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-xl-4 col-md-6">
+            <div class="modern-card stat-odun">
+                <div class="card-glass-overlay"></div>
+                <div class="card-content">
+                    <div class="icon-wrapper">👨‍🍳</div>
+                    <div class="data-wrapper">
+                        <h3 class="data-number">@ViewBag.ChefCount</h3>
+                        <span class="data-label">Şef Sayısı</span>
+                    </div>
+                </div>
+                <div class="card-footer-line"></div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+            <div class="modern-card stat-hamur">
+                <div class="card-glass-overlay"></div>
+                <div class="card-content">
+                    <div class="icon-wrapper">📜</div>
+                    <div class="data-wrapper">
+                        <h3 class="data-number">@ViewBag.CategoryCount</h3>
+                        <span class="data-label">Ürün Kategori Sayısı</span>
+                    </div>
+                </div>
+                <div class="card-footer-line"></div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+            <div class="modern-card stat-ekmek">
+                <div class="card-glass-overlay"></div>
+                <div class="card-content">
+                    <div class="icon-wrapper">🍪</div>
+                    <div class="data-wrapper">
+                        <h3 class="data-number">@ViewBag.ProductCount</h3>
+                        <span class="data-label">Ürün Sayısı</span>
+                    </div>
+                </div>
+                <div class="card-footer-line"></div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+            <div class="modern-card stat-kese">
+                <div class="card-glass-overlay"></div>
+                <div class="card-content">
+                    <div class="icon-wrapper">🤝</div>
+                    <div class="data-wrapper">
+                        <h3 class="data-number">@ViewBag.SubscribeCount</h3>
+                        <span class="data-label">Abone Sayısı</span>
+                    </div>
+                </div>
+                <div class="card-footer-line"></div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+            <div class="modern-card stat-karamel">
+                <div class="card-glass-overlay"></div>
+                <div class="card-content">
+                    <div class="icon-wrapper">🚚</div>
+                    <div class="data-wrapper">
+                        <h3 class="data-number">@ViewBag.ServiceCount</h3>
+                        <span class="data-label">Hizmet Sayısı</span>
+                    </div>
+                </div>
+                <div class="card-footer-line"></div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-md-6">
+            <div class="modern-card stat-rustik">
+                <div class="card-glass-overlay"></div>
+                <div class="card-content">
+                    <div class="icon-wrapper">✉️</div>
+                    <div class="data-wrapper">
+                        <h3 class="data-number">@ViewBag.TestimonialCount</h3>
+                        <span class="data-label">Yorum Sayısı</span>
+                    </div>
+                </div>
+                <div class="card-footer-line"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    :root {
+        --baker-white: #FFFFFF;
+        --baker-flour: #F8F9FA;
+        --baker-wood: #2D1E16;
+        --baker-accent: #C38154;
+        --baker-shadow: 0 20px 40px rgba(0,0,0,0.06);
+        --baker-border: rgba(0,0,0,0.04);
+    }
+
+    .dashboard-wrapper {
+        background-color: var(--baker-flour);
+        background-image: radial-gradient(#dee2e6 0.5px, transparent 0.5px);
+        background-size: 24px 24px;
+        padding: 50px;
+        min-height: 100vh;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* Teknolojik Üst Başlık */
+    .tech-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-bottom: 2px solid var(--baker-border);
+        padding-bottom: 20px;
+    }
+
+    .tech-title {
+        font-weight: 800;
+        letter-spacing: -1.5px;
+        color: var(--baker-wood);
+        font-size: 2.2rem;
+        margin: 0;
+    }
+
+        .tech-title .accent {
+            color: var(--baker-accent);
+            font-style: italic;
+            font-family: 'Playfair Display', serif;
+        }
+
+    .tech-subtitle {
+        font-size: 0.85rem;
+        color: #adb5bd;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    /* Modernist High-Tech Kartlar */
+    .modern-card {
+        background: var(--baker-white);
+        border: 1px solid var(--baker-border);
+        border-radius: 30px;
+        padding: 30px;
+        position: relative;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: var(--baker-shadow);
+        overflow: hidden;
+    }
+
+        .modern-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 30px 60px rgba(45, 30, 22, 0.12);
+            border-color: var(--baker-accent);
+        }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .icon-wrapper {
+        width: 60px;
+        height: 60px;
+        background: var(--baker-flour);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        transition: 0.3s;
+    }
+
+    .modern-card:hover .icon-wrapper {
+        background: var(--baker-accent);
+        transform: rotate(-10deg);
+    }
+
+    .data-number {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: var(--baker-wood);
+        letter-spacing: -2px;
+        margin: 0;
+        line-height: 1;
+    }
+
+    .data-label {
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: #adb5bd;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+    }
+
+    /* Teknolojik Detay Çizgisi */
+    .card-footer-line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        background: rgba(0,0,0,0.02);
+    }
+
+    .modern-card:hover .card-footer-line {
+        background: var(--baker-accent);
+        box-shadow: 0 -5px 15px rgba(195, 129, 84, 0.3);
+    }
+
+    /* Renk Vurguları */
+    .stat-odun {
+        border-top: 5px solid #3D2B1F;
+    }
+
+    .stat-hamur {
+        border-top: 5px solid #EFE3D0;
+    }
+
+    .stat-ekmek {
+        border-top: 5px solid #C38154;
+    }
+
+    /* Sistem Durum Göstergesi */
+    .status-pill {
+        background: white;
+        padding: 8px 20px;
+        border-radius: 100px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .pulse-dot {
+        width: 8px;
+        height: 8px;
+        background: #2ecc71;
+        border-radius: 50%;
+        animation: pulse-green 2s infinite;
+    }
+
+    
+</style>

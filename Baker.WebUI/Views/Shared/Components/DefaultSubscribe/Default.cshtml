@@ -1,0 +1,45 @@
+﻿<div class="bg-primary text-light rounded-top p-5 my-6 mb-0 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h1 class="display-4 text-light mb-0">Bültenimize Abone Olun</h1>
+        </div>
+        <div class="col-md-6 text-md-end">
+            <div class="position-relative">
+                <input id="txtEmail" class="form-control bg-transparent border-light w-100 py-3 ps-4 pe-5" type="email" placeholder="E-posta adresiniz">
+                <button id="btnSubscribe" type="button" class="btn btn-dark py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Kaydol</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    $("#btnSubscribe").click(function () {
+        var emailValue = $("#txtEmail").val();
+
+        if (emailValue == "") {
+            Swal.fire("Hata!", "Lütfen bir e-posta adresi giriniz.", "error");
+            return;
+        }
+
+        var formData = {
+            Mail: emailValue // DTO'daki property adınla aynı olmalı
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/Subscribe/Subscribe/", // Birazdan oluşturacağımız Controller metodu
+            data: formData,
+            success: function (response) {
+                if (response.success) {
+                    Swal.fire("Başarılı!", "Bültene başarıyla abone oldunuz.", "success");
+                    $("#txtEmail").val(""); // Kutuyu temizle
+                } else {
+                    Swal.fire("Hata!", "Bir sorun oluştu.", "error");
+                }
+            }
+        });
+    });
+</script>

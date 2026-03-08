@@ -1,0 +1,42 @@
+﻿@model Baker.WebUI.Dtos.About.ResultAboutDto
+
+<div class="container-xxl py-6">
+    <div class="container">
+        <div class="row g-5">
+            @if (Model != null)
+            {
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row img-twice position-relative h-100">
+                        <div class="col-6">
+                            <img class="img-fluid rounded" src="~/baker-1.0.0/baker-1.0.0/img/about-1.jpg" alt="Hakkımızda Görsel 1">
+                        </div>
+                        <div class="col-6 align-self-end">
+                            <img class="img-fluid rounded" src="~/baker-1.0.0/baker-1.0.0/img/about-2.jpg" alt="Hakkımızda Görsel 2">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <p class="text-primary text-uppercase mb-2">// HAKKIMIZDA</p>
+                        <h1 class="display-6 mb-4">@Model.title</h1>
+                        <p>@Model.description</p>
+                        <div class="row g-2 mb-4">
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Kaliteli Ürünler
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Özel Tasarımlar
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Online Sipariş
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Eve Teslimat
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
