@@ -27,15 +27,16 @@ Geleneksel bir fırın işletmesinin ürün kataloğunu dijital ortama taşımak
 * **İletişim Yönetimi:** Kullanıcılardan gelen mesajların admin panelinde görüntülenmesi.
 
 ## 📸 Projeden Kareler (Web Sitesi)
-<img width="2822" height="1532" alt="1" src="https://github.com/user-attachments/assets/5dca1e99-72cb-4f0a-9fff-a1428e99f768" />
-<img width="2824" height="1530" alt="9" src="https://github.com/user-attachments/assets/849966ec-062d-49a6-acde-6fe725602f6d" />
-<img width="2852" height="1530" alt="8" src="https://github.com/user-attachments/assets/cce68be2-fcf4-4b05-baaa-77fa244c0c25" />
-<img width="2824" height="1534" alt="7" src="https://github.com/user-attachments/assets/e44d181c-46f3-4437-8171-31c53535267c" />
-<img width="2822" height="1536" alt="6" src="https://github.com/user-attachments/assets/4a26844b-3bcb-4601-aed2-640f0c21ad31" />
-<img width="2820" height="1528" alt="5" src="https://github.com/user-attachments/assets/5beba5d3-9b37-4ffa-9b79-ee74c2e36d1e" />
-<img width="2820" height="1532" alt="4" src="https://github.com/user-attachments/assets/915f22d4-259d-440e-8288-75f2fa0e9850" />
-<img width="2822" height="1530" alt="3" src="https://github.com/user-attachments/assets/183df20b-0815-4a2a-888d-75c5b7e85d15" />
-<img width="2824" height="1532" alt="2" src="https://github.com/user-attachments/assets/79d8e85f-3108-4ae6-b936-271d830dd3d4" />
+<img width="2822" height="1532" alt="1" src="https://github.com/user-attachments/assets/56452488-7ef3-4e5e-998c-9af3a82745ab" />
+<img width="2824" height="1532" alt="2" src="https://github.com/user-attachments/assets/4916341a-b0e1-419c-9bf6-7b703534ea55" />
+<img width="2822" height="1530" alt="3" src="https://github.com/user-attachments/assets/ae5abcb9-54ee-43eb-8af4-74e0a656f92f" />
+<img width="2820" height="1532" alt="4" src="https://github.com/user-attachments/assets/fa2f0e80-3fa5-4621-a123-a5a91a8b758e" />
+<img width="2820" height="1528" alt="5" src="https://github.com/user-attachments/assets/f54aa6e2-e3f5-4a1b-b690-767065dd260e" />
+<img width="2822" height="1536" alt="6" src="https://github.com/user-attachments/assets/597f7167-6371-458e-af3e-6d8ea3119d2e" />
+<img width="2824" height="1534" alt="7" src="https://github.com/user-attachments/assets/01d41dff-905e-4ced-ae4b-0b49280e7ae9" />
+<img width="2852" height="1530" alt="8" src="https://github.com/user-attachments/assets/e2ca560c-9697-4298-a786-d368e027a0a0" />
+<img width="2824" height="1530" alt="9" src="https://github.com/user-attachments/assets/13095e87-e884-42e3-ab71-873444642973" />
+
 
 🔑 Yönetim Paneli (PurpleAdmin)
 <img width="2824" height="1532" alt="3" src="https://github.com/user-attachments/assets/1e701230-4937-4009-8db0-ad5b9e456dba" />
