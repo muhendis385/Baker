@@ -39,15 +39,13 @@ Geleneksel bir fırın işletmesinin ürün kataloğunu dijital ortama taşımak
 
 
 🔑 Yönetim Paneli (PurpleAdmin)
-<img width="2824" height="1532" alt="3" src="https://github.com/user-attachments/assets/1e701230-4937-4009-8db0-ad5b9e456dba" />
-<img width="2822" height="1532" alt="1" src="https://github.com/user-attachments/assets/a969ccef-c387-4097-98ed-25702d5df157" />
-<img width="2824" height="1530" alt="5" src="https://github.com/user-attachments/assets/3108135b-24a9-48f0-b884-a1ee9fc3231a" />
-<img width="2838" height="1522" alt="1" src="https://github.com/user-attachments/assets/1598f2d4-0b0a-42d9-80d5-fc7f479d6b9a" />
-<img width="2818" height="1524" alt="2" src="https://github.com/user-attachments/assets/c8429885-9046-4ca3-b1b2-a67e887323e8" />
-<img width="2844" height="1530" alt="2" src="https://github.com/user-attachments/assets/47081a88-31ed-4d8c-8c30-51e08f1855a0" />
-<img width="2854" height="1530" alt="3" src="https://github.com/user-attachments/assets/ad64be7b-85b2-4932-86bd-aa75afe681f0" />
-
-
+<img width="2822" height="1532" alt="1" src="https://github.com/user-attachments/assets/5345c9e2-c1a3-4f72-b616-98e0055ddb17" />
+<img width="2824" height="1532" alt="3" src="https://github.com/user-attachments/assets/38d1ea07-3975-4fa7-9910-f3ddac9a1ede" />
+<img width="2824" height="1530" alt="5" src="https://github.com/user-attachments/assets/95833d3a-df99-4f06-936d-888270d702e6" />
+<img width="2838" height="1522" alt="1" src="https://github.com/user-attachments/assets/97d198ca-5f94-4511-b671-91230332d349" />
+<img width="2818" height="1524" alt="2" src="https://github.com/user-attachments/assets/a1359cca-6ec7-4fe9-92a5-e98a26e6e5ab" />
+<img width="2844" height="1530" alt="2" src="https://github.com/user-attachments/assets/99a58bff-b401-4ea1-9295-8a3f0554efe5" />
+<img width="2854" height="1530" alt="3" src="https://github.com/user-attachments/assets/98b2b2e6-8c73-4847-b026-88313529de97" />
 
 ## ⚙️ Kurulum
 
